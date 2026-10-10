@@ -656,8 +656,6 @@ PROGRAM
 .program-card i{
 
     width:90px;
-    height:90px;
-
     border-radius:50%;
 
     background:rgba(11,110,79,.1);
@@ -672,6 +670,10 @@ PROGRAM
     font-size:38px;
 
     color:var(--primary);
+    min-width: 0;
+  height: auto;
+  padding: 24px 16px;
+  overflow-wrap: anywhere;
 
 }
 
