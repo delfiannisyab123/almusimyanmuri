@@ -659,21 +659,28 @@ PROGRAM
 
 .program-card i{
 
-    width:90px;
+    
+    width:80px;
+
+    height:80px;
+
     border-radius:50%;
 
-    background:rgba(11,110,79,.1);
+    background:#eef8f4;
+
+    color:var(--primary);
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     margin:auto;
-    margin-bottom:25px;
 
-    font-size:38px;
+    font-size:34px;
 
-    color:var(--primary);
+    transition:.4s;
 }
 
 .program-card h3{
