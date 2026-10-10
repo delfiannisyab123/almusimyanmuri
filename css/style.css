@@ -642,6 +642,10 @@ PROGRAM
     transition:.4s;
 
     border-top:5px solid transparent;
+    min-width: 0;
+  height: auto;
+  padding: 24px 16px;
+  overflow-wrap: anywhere;
 
 }
 
@@ -670,11 +674,6 @@ PROGRAM
     font-size:38px;
 
     color:var(--primary);
-    min-width: 0;
-  height: auto;
-  padding: 24px 16px;
-  overflow-wrap: anywhere;
-
 }
 
 .program-card h3{
