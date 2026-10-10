@@ -1,3 +1,4 @@
+
 /* ===========================================================
    PONDOK PESANTREN ALMUSLIM
    Khidmah • Istiqomah • Berkah
@@ -597,87 +598,6 @@ ABOUT
 
 }
 
-
-/*=========================================================
-VISION
-=========================================================*/
-
-.vision{
-
-    background:#f7faf8;
-
-}
-
-.vision-grid{
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-
-}
-
-.vision-card{
-
-    background:#fff;
-    padding:45px;
-    border-radius:20px;
-    text-align:center;
-
-    box-shadow:var(--shadow);
-
-    transition:.4s;
-
-}
-
-.vision-card:hover{
-
-    transform:translateY(-12px);
-
-}
-
-.vision-card i{
-
-    width:90px;
-    height:90px;
-
-    background:var(--primary);
-
-    color:#fff;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:34px;
-
-    margin:auto;
-    margin-bottom:25px;
-
-}
-
-.vision-card h3{
-
-    margin-bottom:20px;
-    color:var(--primary);
-
-}
-
-.vision-card ul{
-
-    margin-top:20px;
-
-}
-
-.vision-card li{
-
-    margin:12px 0;
-    color:#555;
-
-}
-
-
 /*=========================================================
 PROGRAM
 =========================================================*/
@@ -690,11 +610,22 @@ PROGRAM
 
 .program-grid{
 
-    display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 8px;
 
 }
+ 
+.program-grid > div {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+} 
+
 
 .program-card{
 
@@ -777,19 +708,14 @@ FACILITY
 
 }
 
-.facility-card{
+.facility-card {
+    padding: 35px;
+    min-height: 200px;
 
-    background:white;
-
-    padding:35px;
-
-    text-align:center;
-
-    border-radius:20px;
-
-    transition:.4s;
-
-    box-shadow:var(--shadow);
+    text-align: center;
+    border-radius: 20px;
+    transition: .4s;
+    box-shadow: var(--shadow);
 
 }
 
@@ -857,23 +783,39 @@ STATISTICS
 
 .stats-grid{
 
-    display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:30px;
+    grid-template-columns:repeat(3,1fr);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 8px;
 
+}
+
+.stats-grid > div {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .stats-card{
 
     text-align:center;
 
-    background:rgba(255,255,255,.08);
-
     backdrop-filter:blur(10px);
 
     border-radius:20px;
 
     padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    border-top:5px solid transparent;
 
 }
 
@@ -1073,15 +1015,16 @@ CONTACT
 
 .contact-box{
 
-    display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 8px;
 
 }
 
-.contact-box div{
+.contact-box a{
 
     background:#fff;
 
@@ -1094,8 +1037,16 @@ CONTACT
     box-shadow:var(--shadow);
 
     transition:.4s;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    width: 200px; height: 200px; padding: 20px; text-align: center; 
+    overflow: hidden; 
+    overflow-wrap: break-word;
 
 }
+
+.contact-box p { max-width: 100%; overflow-wrap: break-word; word-break: normal; margin: 10px 0; }
 
 .contact-box div:hover{
 
