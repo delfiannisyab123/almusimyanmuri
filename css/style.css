@@ -628,24 +628,19 @@ PROGRAM
 
 
 .program-card{
-
     background:#fff;
-
-    padding:40px 30px;
-
-    border-radius:20px;
-
     text-align:center;
-
     box-shadow:0 15px 40px rgba(0,0,0,.08);
-
     transition:.4s;
-
     border-top:5px solid transparent;
-    min-width: 0;
-  height: auto;
   padding: 24px 16px;
   overflow-wrap: anywhere;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -658,29 +653,18 @@ PROGRAM
 }
 
 .program-card i{
-
-    
     width:80px;
-
     height:80px;
-
     border-radius:50%;
-
     background:#eef8f4;
-
     color:var(--primary);
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     margin:auto;
-
-    font-size:34px;
-
     transition:.4s;
+    font-size: 45px;
+    
 }
 
 .program-card h3{
@@ -695,6 +679,28 @@ PROGRAM
 
     color:#666;
 
+}
+
+@media (max-width: 768px) {
+    .program-card {
+        width: 90px;
+        height: 90px;
+    }
+
+    .program-card i {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-card {
+        width: 75px;
+        height: 75px;
+    }
+
+    .program-card i {
+        font-size: 26px;
+    }
 }
 
 
