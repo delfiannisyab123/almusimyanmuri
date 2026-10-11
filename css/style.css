@@ -641,7 +641,14 @@ PROGRAM
     display: flex;
     justify-content: center;
     align-items: center;
+   row-gap: 30px;
 
+}
+
+@media (max-width: 768px) {
+    .program-card {
+        row-gap: 25px;
+    }
 }
 
 .program-card:hover{
