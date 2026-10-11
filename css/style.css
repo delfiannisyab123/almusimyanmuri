@@ -638,9 +638,11 @@ PROGRAM
     width: 130px;
     height: 130px;
     border-radius: 10%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
    row-gap: 30px;
 
 }
